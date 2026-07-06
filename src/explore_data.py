@@ -33,3 +33,36 @@ print(df.describe())
 
 print("\nCorrelation Matrix:")
 print(df.corr(numeric_only=True)["Calories_Burned"].sort_values(ascending=False))
+
+# =====================================
+# Homework 2 Analysis
+# =====================================
+
+import matplotlib.pyplot as plt
+
+# Calculate Pearson correlation
+r = df["Session_Duration (hours)"].corr(df["Calories_Burned"])
+
+print("\nHomework 2 Results")
+print(f"Pearson Correlation (r): {r:.3f}")
+
+# Create scatter plot
+plt.figure(figsize=(10, 6))
+
+plt.scatter(
+    df["Session_Duration (hours)"],
+    df["Calories_Burned"],
+    alpha=0.6
+)
+
+plt.title("Session Duration vs Calories Burned")
+plt.xlabel("Session Duration (Hours)")
+plt.ylabel("Calories Burned")
+
+plt.grid(True)
+
+plt.tight_layout()
+
+plt.savefig("scatter_plot.png", dpi=300)
+
+plt.show()
