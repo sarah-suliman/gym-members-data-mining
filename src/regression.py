@@ -752,7 +752,14 @@ def main() -> None:
     """
     Execute regression when the script is run directly.
     """
+
+    print("=" * 60)
+    print("Regression Analysis")
+    print("=" * 60)
+
     run_regression_analysis()
+
+    print("\nRegression analysis completed successfully.")
 
 
 if __name__ == "__main__":

@@ -74,9 +74,16 @@ def create_scatter_plot(df: pd.DataFrame) -> None:
 
 def main() -> None:
     """Run exploratory analysis."""
+
+    print("=" * 60)
+    print("Exploratory Data Analysis")
+    print("=" * 60)
+
     df = load_dataset(DATA_PATH)
     summarize_dataset(df)
     create_scatter_plot(df)
+
+    print("\nExploratory analysis completed successfully.")
 
 
 if __name__ == "__main__":

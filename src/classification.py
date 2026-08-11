@@ -761,7 +761,14 @@ def main() -> None:
     """
     Execute classification when this file is run directly.
     """
+
+    print("=" * 60)
+    print("Classification Analysis")
+    print("=" * 60)
+
     run_classification_analysis()
+
+    print("\nClassification analysis completed successfully.")
 
 
 if __name__ == "__main__":

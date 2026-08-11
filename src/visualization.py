@@ -309,6 +309,11 @@ def generate_all_visualizations(df: pd.DataFrame) -> None:
 
 def main() -> None:
     """Run the complete visualization pipeline."""
+
+    print("=" * 60)
+    print("Data Visualization")
+    print("=" * 60)
+
     dataset = load_dataset()
 
     print(
@@ -317,6 +322,8 @@ def main() -> None:
     )
 
     generate_all_visualizations(dataset)
+
+    print("\nVisualization pipeline completed successfully.")
 
 
 if __name__ == "__main__":

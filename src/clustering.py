@@ -546,7 +546,14 @@ def run_clustering_analysis() -> None:
 
 def main() -> None:
     """Execute clustering when the script is run directly."""
+
+    print("=" * 60)
+    print("K-Means Clustering Analysis")
+    print("=" * 60)
+
     run_clustering_analysis()
+
+    print("\nClustering analysis completed successfully.")
 
 
 if __name__ == "__main__":

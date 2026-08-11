@@ -357,7 +357,14 @@ def preprocess_dataset() -> pd.DataFrame:
 
 def main() -> None:
     """Execute preprocessing when this file is run directly."""
+
+    print("=" * 60)
+    print("Data Preprocessing")
+    print("=" * 60)
+
     preprocess_dataset()
+
+    print("\nPreprocessing completed successfully.")
 
 
 if __name__ == "__main__":
